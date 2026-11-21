@@ -4,12 +4,12 @@
       <p>DeepSkyMotion Scripts - custom PixInsight scripts by DeepSkyMotion.</p>
    </description>
    <platform os="all" arch="noarch" version="1.9.4:1.9.99">
-      <package fileName="SyntheticLight_r2.zip" sha1="199742f3d95545762c50bb7d383217ee5db4c96d" type="script" releaseDate="20261121">
+      <package fileName="SyntheticLight_r3.zip" sha1="b9ae10d34eefac3a4af7ec64f5ce0cd948e742f9" type="script" releaseDate="20261121">
          <title>Synthetic Light</title>
          <remove>src/scripts/DeepSkyMotion/SyntheticLight/</remove>
          <description>
             <p>Builds a synthetic monochrome luminance from an RGB image or registered R, G, B masters using CFA, Rec.709 or custom weights, with optional background/scale normalization and a live auto-stretched preview.</p>
-            <p>Release 2 (built from development version v4). Menu: Script &gt; DeepSkyMotion &gt; Synthetic Light.</p>
+            <p>Release 3 (built from development version v5). Menu: Script &gt; DeepSkyMotion &gt; Synthetic Light.</p>
          </description>
       </package>
    </platform>
