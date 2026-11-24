@@ -12,5 +12,13 @@
             <p>Release 3 (built from development version v5). Menu: Script &gt; DeepSkyMotion &gt; Synthetic Light.</p>
          </description>
       </package>
+      <package fileName="SmartFrameSelection_r1.zip" sha1="e237e844215c58d7ba52a86d31709dd448b992b8" type="script" releaseDate="20261124">
+         <title>Smart Frame Selection</title>
+         <remove>src/scripts/DeepSkyMotion/SmartFrameSelection/</remove>
+         <description>
+            <p>Measures subframes in a central ROI (CFA frames debayered with VNG, one or all channels at full resolution) with SubframeSelector and selects the best frames automatically, by a rule table or by interactive review.</p>
+            <p>Release 1 (built from development version v3). Menu: Script &gt; DeepSkyMotion &gt; Smart Frame Selection.</p>
+         </description>
+      </package>
    </platform>
 </xri>
