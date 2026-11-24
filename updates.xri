@@ -20,5 +20,13 @@
             <p>Release 1 (built from development version v3). Menu: Script &gt; DeepSkyMotion &gt; Smart Frame Selection.</p>
          </description>
       </package>
+      <package fileName="FlatStrengthCalibration_r1.zip" sha1="418ee0bc343b7a0f06c496a333b8c916f2e1486e" type="script" releaseDate="20261124">
+         <title>Flat Strength Calibration</title>
+         <remove>src/scripts/DeepSkyMotion/FlatStrengthCalibration/</remove>
+         <description>
+            <p>Calibrates lights with per-session flats at an adjustable, optionally per-CFA-channel flat strength, with shared master darks and shared or per-session output folders.</p>
+            <p>Release 1 (built from development version v5). Menu: Script &gt; DeepSkyMotion &gt; Flat Strength Calibration.</p>
+         </description>
+      </package>
    </platform>
 </xri>
