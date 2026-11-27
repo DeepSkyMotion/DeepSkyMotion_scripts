@@ -84,7 +84,6 @@ Weights are always normalized to sum 1.
 
 **Normalization**
 - **None** — plain weighted average.
-- **Match backgrounds** — subtracts each channel's median and adds back the weighted mean background.
 - **Match backgrounds and scale** — also brings each channel's noise (MAD) to the G level before weighting.
 
 **Output** — a new linear 32-bit float mono image (`SyntheticLight`, `SyntheticLight_1`, …) with the source FITS keywords and astrometric solution copied. Your source images are never modified.
@@ -96,7 +95,7 @@ Weights are always normalized to sum 1.
 
 ### Smart Frame Selection
 
-**Input** — light frames (FITS or XISF, mono or CFA/OSC) and an output folder. Subframe scale and camera gain are filled in from the FITS header when present.
+**Input** — light frames (FITS or XISF, mono or CFA/OSC) and an output folder. Subframe scale and camera gain are filled in from the FITS header when present. All frames in one run must be of one kind (same size, mono or CFA); run the script once per kind.
 
 **Measurement**
 - Native SubframeSelector, run only on a centred region of interest (50 % of width and height by default), in small batches to stay light on RAM.
@@ -109,11 +108,11 @@ Weights are always normalized to sum 1.
 
 With all channels measured, a frame passes only if it passes in every channel.
 
-**Output** — approved frames are copied to the output folder, either unchanged or as XISF with their measurements stored as keywords and properties (raw CFA data is kept lossless). A CSV report of every frame is written alongside. Your source files are never modified, and temporary files are always removed.
+**Output** — approved frames are copied to the output folder, either unchanged or as XISF with their measurements stored as keywords and properties (raw CFA data is kept lossless). A CSV report of every frame is written alongside, also when a copy fails. Your source files are never modified, and temporary files are always removed.
 
 ### Flat Strength Calibration
 
-**Input** — one or more sessions, each with light frames, flat frames, a master dark and a master dark flat (FITS or XISF, mono or CFA/OSC). Shared master dark and dark flat files can be set once for all sessions; a session's own file overrides them.
+**Input** — one or more sessions, each with light frames, flat frames, a master dark and a master dark flat (FITS or XISF, mono or CFA/OSC). The master darks must still contain the bias (not bias-subtracted), like WBPP master darks. Shared master dark and dark flat files can be set once for all sessions; a session's own file overrides them.
 
 **Flat strength** — a slider from −1 to +1 per session, with optional per-frame overrides:
 - **0** — standard calibration, identical to a plain ImageCalibration run;
