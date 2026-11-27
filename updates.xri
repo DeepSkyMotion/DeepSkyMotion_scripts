@@ -4,14 +4,6 @@
       <p>DeepSkyMotion Scripts - custom PixInsight scripts by DeepSkyMotion.</p>
    </description>
    <platform os="all" arch="noarch" version="1.9.4:1.9.99">
-      <package fileName="SyntheticLight_r3.zip" sha1="b9ae10d34eefac3a4af7ec64f5ce0cd948e742f9" type="script" releaseDate="20261121">
-         <title>Synthetic Light</title>
-         <remove>src/scripts/DeepSkyMotion/SyntheticLight/</remove>
-         <description>
-            <p>Builds a synthetic monochrome luminance from an RGB image or registered R, G, B masters using CFA, Rec.709 or custom weights, with optional background/scale normalization and a live auto-stretched preview.</p>
-            <p>Release 3 (built from development version v5). Menu: Script &gt; DeepSkyMotion &gt; Synthetic Light.</p>
-         </description>
-      </package>
       <package fileName="SmartFrameSelection_r1.zip" sha1="e237e844215c58d7ba52a86d31709dd448b992b8" type="script" releaseDate="20261124">
          <title>Smart Frame Selection</title>
          <remove>src/scripts/DeepSkyMotion/SmartFrameSelection/</remove>
@@ -26,6 +18,14 @@
          <description>
             <p>Calibrates lights with per-session flats at an adjustable, optionally per-CFA-channel flat strength, with shared master darks and shared or per-session output folders.</p>
             <p>Release 1 (built from development version v5). Menu: Script &gt; DeepSkyMotion &gt; Flat Strength Calibration.</p>
+         </description>
+      </package>
+      <package fileName="SyntheticLight_r4.zip" sha1="d29e69a3420221b3bf19c10789ee3236a86292d5" type="script" releaseDate="20261127">
+         <title>Synthetic Light</title>
+         <remove>src/scripts/DeepSkyMotion/SyntheticLight/</remove>
+         <description>
+            <p>Builds a synthetic monochrome luminance from an RGB image or registered R, G, B masters using CFA, Rec.709 or custom weights, with optional background/scale normalization and a live auto-stretched preview.</p>
+            <p>Release 4 (built from development version v6). Menu: Script &gt; DeepSkyMotion &gt; Synthetic Light.</p>
          </description>
       </package>
    </platform>
