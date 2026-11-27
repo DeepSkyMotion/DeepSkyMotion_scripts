@@ -4,14 +4,6 @@
       <p>DeepSkyMotion Scripts - custom PixInsight scripts by DeepSkyMotion.</p>
    </description>
    <platform os="all" arch="noarch" version="1.9.4:1.9.99">
-      <package fileName="FlatStrengthCalibration_r1.zip" sha1="418ee0bc343b7a0f06c496a333b8c916f2e1486e" type="script" releaseDate="20261124">
-         <title>Flat Strength Calibration</title>
-         <remove>src/scripts/DeepSkyMotion/FlatStrengthCalibration/</remove>
-         <description>
-            <p>Calibrates lights with per-session flats at an adjustable, optionally per-CFA-channel flat strength, with shared master darks and shared or per-session output folders.</p>
-            <p>Release 1 (built from development version v5). Menu: Script &gt; DeepSkyMotion &gt; Flat Strength Calibration.</p>
-         </description>
-      </package>
       <package fileName="SyntheticLight_r4.zip" sha1="d29e69a3420221b3bf19c10789ee3236a86292d5" type="script" releaseDate="20261127">
          <title>Synthetic Light</title>
          <remove>src/scripts/DeepSkyMotion/SyntheticLight/</remove>
@@ -26,6 +18,14 @@
          <description>
             <p>Measures subframes in a central ROI (CFA frames debayered with VNG, one or all channels at full resolution) with SubframeSelector and selects the best frames automatically, by a rule table or by interactive review.</p>
             <p>Release 2 (built from development version v4). Menu: Script &gt; DeepSkyMotion &gt; Smart Frame Selection.</p>
+         </description>
+      </package>
+      <package fileName="FlatStrengthCalibration_r2.zip" sha1="50502fec5c9726ac7f81e32e046e949eca2b7c32" type="script" releaseDate="20261127">
+         <title>Flat Strength Calibration</title>
+         <remove>src/scripts/DeepSkyMotion/FlatStrengthCalibration/</remove>
+         <description>
+            <p>Calibrates lights with per-session flats at an adjustable, optionally per-CFA-channel flat strength, with shared master darks and shared or per-session output folders.</p>
+            <p>Release 2 (built from development version v6). Menu: Script &gt; DeepSkyMotion &gt; Flat Strength Calibration.</p>
          </description>
       </package>
    </platform>
