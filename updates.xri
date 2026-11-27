@@ -4,14 +4,6 @@
       <p>DeepSkyMotion Scripts - custom PixInsight scripts by DeepSkyMotion.</p>
    </description>
    <platform os="all" arch="noarch" version="1.9.4:1.9.99">
-      <package fileName="SmartFrameSelection_r1.zip" sha1="e237e844215c58d7ba52a86d31709dd448b992b8" type="script" releaseDate="20261124">
-         <title>Smart Frame Selection</title>
-         <remove>src/scripts/DeepSkyMotion/SmartFrameSelection/</remove>
-         <description>
-            <p>Measures subframes in a central ROI (CFA frames debayered with VNG, one or all channels at full resolution) with SubframeSelector and selects the best frames automatically, by a rule table or by interactive review.</p>
-            <p>Release 1 (built from development version v3). Menu: Script &gt; DeepSkyMotion &gt; Smart Frame Selection.</p>
-         </description>
-      </package>
       <package fileName="FlatStrengthCalibration_r1.zip" sha1="418ee0bc343b7a0f06c496a333b8c916f2e1486e" type="script" releaseDate="20261124">
          <title>Flat Strength Calibration</title>
          <remove>src/scripts/DeepSkyMotion/FlatStrengthCalibration/</remove>
@@ -26,6 +18,14 @@
          <description>
             <p>Builds a synthetic monochrome luminance from an RGB image or registered R, G, B masters using CFA, Rec.709 or custom weights, with optional background/scale normalization and a live auto-stretched preview.</p>
             <p>Release 4 (built from development version v6). Menu: Script &gt; DeepSkyMotion &gt; Synthetic Light.</p>
+         </description>
+      </package>
+      <package fileName="SmartFrameSelection_r2.zip" sha1="9b052add3d1a465649eb549f7eeebbd4e8e0a029" type="script" releaseDate="20261127">
+         <title>Smart Frame Selection</title>
+         <remove>src/scripts/DeepSkyMotion/SmartFrameSelection/</remove>
+         <description>
+            <p>Measures subframes in a central ROI (CFA frames debayered with VNG, one or all channels at full resolution) with SubframeSelector and selects the best frames automatically, by a rule table or by interactive review.</p>
+            <p>Release 2 (built from development version v4). Menu: Script &gt; DeepSkyMotion &gt; Smart Frame Selection.</p>
          </description>
       </package>
    </platform>
